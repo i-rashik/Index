@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html> 
+
+<html> 
+<head> 
+
+    <style> 
+body{
+     background-image: radial-gradient(#e0e0eb, #e0e0eb);
+}
+
+        legend { 
+
+            display: block; 
+
+            padding-left: 2px; 
+
+            padding-right: 2px; 
+
+            border: none; 
+
+        } 
+
+    </style> 
+
+   
+
+    <script type="text/javascript"> 
+
+        function validate() { 
+
+   
+
+            var user1= document.getElementById("email").value; 
+
+            var user2= document.getElementById("pwd").value; 
+
+            var re = /^[7-9][0-9]{9}$/; 
+
+            if ( re.test(user1)||user1=="nasar@gmail.com"&&user2=="nasar@123") { 
+
+                alert("Login Is Successfull"); 
+
+               
+
+            } 
+
+            else { 
+
+                  alert("You have entered an invalid email address!");
+
+
+                user2.style.border = "red solid 3px"; 
+
+                return false; 
+
+            } 
+
+        } 
+
+    </script> 
+
+</head> 
+
+   
+
+<body> 
+
+    <center> 
+
+        <h1>Email Registration</h1> 
+
+        <form> 
+
+            <fieldset style="width:300px"> 
+
+                <legend><b><i>Registation Form</i></b></legend> 
+
+                <table>       
+                    <br>
+                    <tr> 
+                        <input type="email" placeholder="username@gmail.com" id="email"> 
+
+                    </tr> 
+                    <br><br>
+                    <tr>
+                        <input type="password" placeholder="enter your password" id="pwd"> 
+                    </tr> 
+
+                    <br><br>
+
+                        <tr>
+                        <input type="submit" onclick="validate()" value="SUBMIT"> 
+
+                    </tr> 
+
+                </table> 
+
+            </fieldset> 
+
+        </form> 
+
+    </center> 
+
+</body> 
+
+   
+
+</html> 
